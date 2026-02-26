@@ -1,55 +1,53 @@
 # Ethical Boundary Enforcement (OpenClaw Skill)
 
-A customizable ethical/policy gate that evaluates proposed actions before execution and returns one of: `allow`, `modify`, or `reject` with explicit rationale.
+**Build better OpenClaw bots, faster.**
 
-## What it does
+Policy-gates risky actions with allow/modify/reject decisions to keep autonomy aligned with your rules.
 
-- Loads user-defined policy rules
-- Applies hard-block checks (immediate reject)
-- Applies soft constraints (modify before allow)
-- Enforces contextual rules (e.g., external actions require approval)
-- Emits machine-readable decision output + human audit report
+## Why this skill is useful
 
-## Included files
+- Reduces manual operations and repetitive decision overhead
+- Improves consistency and reliability in production workflows
+- Gives you a reusable automation block you can compose with other skills
 
-- `SKILL.md` — skill behavior and policy model
-- `scripts/evaluate_action.py` — compliance decision engine
-- `references/sample-policy.json` — sample ethical policy
-- `references/sample-action.json` — sample action payload
-- `_meta.json` — metadata
+## What you can do with it
+
+- Run focused automation workflows around **Ethical Boundary Enforcement**
+- Adapt behavior to your own process and constraints
+- Integrate outputs with your existing OpenClaw routines
 
 ## Quick Start
 
 ```bash
-python3 scripts/evaluate_action.py \
-  --action references/sample-action.json \
-  --policy references/sample-policy.json \
-  --out ./out/compliance-result.json \
-  --audit ./out/compliance-audit.md
+# Clone
+git clone https://github.com/mogus-prog/ethical-boundary-enforcement-skill.git
+cd ethical-boundary-enforcement-skill
+
+# Read usage and run sample flow from SKILL.md
 ```
 
-## Policy model
+> This repository is designed to be used as an OpenClaw skill package. Start with `SKILL.md` for trigger guidance and workflow steps.
 
-- **Hard blocks**: reject immediately
-- **Soft constraints**: require modifications/redactions/review
-- **Context rules**: conditional requirements (like explicit consent)
+## Ideal use cases
 
-## Safety
+- Personal AI operators who need dependable routines
+- Builders running multi-step automations
+- Teams who want reusable operational playbooks
 
-- Advisory gate by default (no direct side effects)
-- Supports least-privilege and approval-first workflows
-- Full rationale/audit trail for every decision
+## Pair it with other skills
 
-## Commercial Support & Custom Builds
+This skill works best as part of a larger stack (monitoring + planning + execution + safety).
 
-Want this adapted to your workflow or stack?
+## Commercial support / custom builds
+
+Want this adapted to your exact workflow and tech stack?
 
 - Custom implementation
 - Integration with your existing OpenClaw setup
 - Security hardening + approval-gated actions
 - Ongoing optimization and support
 
-Contact: **DirtyLeopard.com**
+**Contact:** https://dirtyleopard.com
 
 ## Service Packages
 
@@ -60,6 +58,10 @@ Contact: **DirtyLeopard.com**
 | Operator Suite | $3,000+ | 5–8 skills, orchestration, security/reliability tuning |
 
 For commercial licensing or retainers, open an issue in this repo or contact via DirtyLeopard.com.
+
+## Contributing
+
+PRs and issues are welcome. If you test this in production, share results and edge cases.
 
 ## License
 
