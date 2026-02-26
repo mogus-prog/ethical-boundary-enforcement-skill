@@ -1,0 +1,8 @@
+{
+  "id": "act-001",
+  "kind": "public_statement",
+  "external": true,
+  "has_explicit_approval": false,
+  "risk_tags": ["confidential"],
+  "summary": "Post a public update including internal details"
+}

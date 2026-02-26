@@ -1,0 +1,13 @@
+{
+  "hard_blocks": {
+    "blocked_tags": ["illegal", "harmful", "secret_exfiltration", "credential_disclosure"],
+    "blocked_kinds": ["financial_transaction", "unauthorized_account_change"]
+  },
+  "soft_constraints": {
+    "redact_tags": ["sensitive_personal_data", "confidential"],
+    "review_kinds": ["public_statement", "bulk_external_send"]
+  },
+  "context_rules": {
+    "external_requires_approval": true
+  }
+}

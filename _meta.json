@@ -1,0 +1,7 @@
+{
+  "name": "ethical-boundary-enforcement",
+  "version": "0.1.0",
+  "summary": "Customizable ethical/policy gate for allow/modify/reject decisions.",
+  "author": "Mogus",
+  "license": "MIT"
+}
